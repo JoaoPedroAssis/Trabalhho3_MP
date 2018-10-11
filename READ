@@ -1,3 +1,4 @@
 João Pedro Assis dos Santos - 17/0146367
 
 Para compilar o programa, basta digitar o comando "make" na pasta source. Após isso, para rodar o programa de testes, digite apenas ./test .
+A documentação feita pelo doxygen está presente na pasta include. Para acessá-la, basta entrar na pasta html e procurar o arquivo "index.html". Após achar, arrastar o arquivo para um browser para que ele possa ser visualizado.
