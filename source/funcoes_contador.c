@@ -47,6 +47,9 @@ int contador(char nomeArquivo[], int linhas_comentadas, int linhas_vazias){
   }
 
   for (i = 0; i < count-1; i++) {
+
+  	//--------- contando comentários-------------------------
+
     if (texto[i] == '/' && texto[i+1] == '*') {  // Inicio do comentario
       bCom = 1;
       num_Com++;
@@ -71,6 +74,25 @@ int contador(char nomeArquivo[], int linhas_comentadas, int linhas_vazias){
       Com_flag = 1;
     }
 
+    // ---------------Contar Vazias---------------
+    // Se for linha vazia e houver quebra de linha, acrescenta numero de vazias
+    if (linhaVaz == 1 && ContVaz == 1 && texto[i] == '\n') {
+      num_vazias++;
+      linhaVaz = 0;
+    }
+    if (linhaVaz == 1 && texto[i] != ' ' && texto[i] != '\n') {
+      ContVaz = 0;
+    }
+    if (texto[i] == '\n') {
+      linhaVaz = 1;
+      ContVaz = 1;
+    }
 }
+  // Garantindo o não acesso de uma posição negativa do array
+  if (count > 3) {
+    if (texto[count-2] == '\n') {
+      num_vazias++;
+    }
+  }
   return Num_linhas_tot + 1 - num_vazias - num_Com;
 }

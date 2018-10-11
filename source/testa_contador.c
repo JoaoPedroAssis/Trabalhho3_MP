@@ -13,3 +13,9 @@ TEST_CASE("Código sem espaços e com comentários"){
 	
 	REQUIRE(contador("../test_cases/test3.c",1,1) == 8);
 }
+
+TEST_CASE("Código com espaços"){
+
+	
+	REQUIRE(contador("../test_cases/test2.c",1,1) == 8);
+}
