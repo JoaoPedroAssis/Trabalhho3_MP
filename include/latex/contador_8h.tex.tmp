@@ -1,0 +1,53 @@
+\hypertarget{contador_8h}{}\section{contador.\+h File Reference}
+\label{contador_8h}\index{contador.\+h@{contador.\+h}}
+
+
+Módulo que contém a função que faz a contagem de linhas de um programa. A devida especificação de como a função o faz está explicada por meio de código claro e comentado. Assertivas de entrada e saída também foram escritas, para que se possa entender melhor o que a função faz como um todo.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+Include dependency graph for contador.\+h\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{contador_8h_aff284238864b3d75dbfa1ce58e5d505c}{contador} (char nome\+Arquivo\mbox{[}$\,$\mbox{]}, int linhas\+\_\+comentadas, int linhas\+\_\+vazias)
+\begin{DoxyCompactList}\small\item\em Função que conta quantas linhas de código útil existem em um programa. Para efeitos matemáticos, também é calculado o número de linhas que possuem comentários, bem como o número de linhas vazias. Por fim, após contar o número total de linhas, os comentários e linhas em brancos são descontados desse quantitativo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Módulo que contém a função que faz a contagem de linhas de um programa. A devida especificação de como a função o faz está explicada por meio de código claro e comentado. Assertivas de entrada e saída também foram escritas, para que se possa entender melhor o que a função faz como um todo. 
+
+\begin{DoxyAuthor}{Author}
+João Pedro Assis dos Santos -\/ 17/0146367 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{contador.\+h@{contador.\+h}!contador@{contador}}
+\index{contador@{contador}!contador.\+h@{contador.\+h}}
+\subsubsection[{\texorpdfstring{contador(char nome\+Arquivo[], int linhas\+\_\+comentadas, int linhas\+\_\+vazias)}{contador(char nomeArquivo[], int linhas_comentadas, int linhas_vazias)}}]{\setlength{\rightskip}{0pt plus 5cm}int contador (
+\begin{DoxyParamCaption}
+\item[{char}]{nome\+Arquivo\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{linhas\+\_\+comentadas, }
+\item[{int}]{linhas\+\_\+vazias}
+\end{DoxyParamCaption}
+)}\hypertarget{contador_8h_aff284238864b3d75dbfa1ce58e5d505c}{}\label{contador_8h_aff284238864b3d75dbfa1ce58e5d505c}
+
+
+Função que conta quantas linhas de código útil existem em um programa. Para efeitos matemáticos, também é calculado o número de linhas que possuem comentários, bem como o número de linhas vazias. Por fim, após contar o número total de linhas, os comentários e linhas em brancos são descontados desse quantitativo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & nome\+Arquivo\mbox{[}\mbox{]} -\/ nome do arquivo de entrada, que será inicializado dentro da função \\
+\hline
+{\em int} & linhas\+\_\+comentadas -\/ flag verificadora \\
+\hline
+{\em int} & linhas\+\_\+vazias -\/ flag verificadora\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ retorna o número de linhas úteis da função 
+\end{DoxyReturn}
